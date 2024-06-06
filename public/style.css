@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#game {
+    margin: 50px;
+}
+
+#dealer-cards,
+#your-cards {
+    display: flex;
+    justify-content: center;
+}
+
+#dealer-cards img,
+#your-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 5px;
+    border: 1px solid #000;
+    border-radius: 8px; 
+}
+#hit-button,
+#stand-button,
+#deal-button {
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#hit-button:hover,
+#stand-button:hover,
+#deal-button:hover {
+    background-color: #0056b3; 
+}
+
+#results {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #dc3545;
+}
