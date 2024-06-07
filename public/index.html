@@ -51,11 +51,14 @@
             const leaderboardList = document.getElementById("leaderboard-list");
             leaderboardList.innerHTML = '';
 
+            // Sort leaderboard in descending order by maxScore
+            leaderboard.sort((a, b) => b.maxScore - a.maxScore);
+
             // Display the top players in the leaderboard
             leaderboard.forEach((player, index) => {
                 if (index < 10) {
                     const listItem = document.createElement("li");
-                    listItem.innerText = `${player.playerName}: $${player.balance}`;
+                    listItem.innerText = `${player.playerName}: $${player.maxScore}`;
                     leaderboardList.appendChild(listItem);
                 }
             });
